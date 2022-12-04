@@ -1,0 +1,19 @@
+name: ci
+on:
+  - push
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: Checkout
+      - uses: actions/setup-node@v3
+        name: Setup Node
+        with:
+          node-version-file: ".nvmrc"
+      - run: corepack enable
+      - run: yarn install
+      - run: yarn format -check -all
+      - run: yarn clean
+      - run: yarn build
+      - run: yarn test

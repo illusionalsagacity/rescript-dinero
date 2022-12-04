@@ -1,0 +1,37 @@
+{
+  "name": "@illusionalsagacity/rescript-dinero",
+  "version": "0.1.0",
+  "description": "ReScript bindings to Dinero.js",
+  "main": "index.js",
+  "author": "Robert Meyer",
+  "license": "MIT",
+  "packageManager": "yarn@3.5.0",
+  "scripts": {
+    "test": "node ./src/__test__/Dinero_test.bs.cjs",
+    "start": "rescript build -w",
+    "build": "rescript build -with-deps",
+    "format": "rescript format -all",
+    "clean": "rescript clean"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "@dinero.js/currencies": "2.0.0-alpha.1",
+    "@dusty-phillips/rescript-zora": "^3.0.1",
+    "@rescript/core": "~0.2.0",
+    "dinero.js": "2.0.0-alpha.13",
+    "rescript": "^10.1.0",
+    "zora": "^5.2.0"
+  },
+  "peerDependencies": {
+    "@dinero.js/calculator-bigint": "2.0.0-alpha.2",
+    "@dinero.js/currencies": "2.0.0-alpha.1",
+    "@rescript/core": "~0.1.0",
+    "dinero.js": "2.0.0-alpha.14",
+    "rescript": "^10.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@dinero.js/calculator-bigint": {
+      "optional": true
+    }
+  }
+}
