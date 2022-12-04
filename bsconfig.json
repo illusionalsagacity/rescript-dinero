@@ -1,0 +1,17 @@
+{
+  "name": "rescript-dinero",
+  "version": "0.1.0",
+  "bs-dependencies": [],
+  "bs-dev-dependencies": [
+    "@ryyppy/rescript-promise",
+    "@dusty-phillips/rescript-zora"
+  ],
+  "suffix": ".mjs",
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "sources": [
+    { "dir": "src", "subdirs": [{ "dir": "__test__", "type": "dev" }] }
+  ]
+}
