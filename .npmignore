@@ -1,3 +1,5 @@
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -132,3 +134,6 @@ dist
 
 # rescript
 lib
+
+CHANGELOG.md
+README.md

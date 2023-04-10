@@ -11,7 +11,8 @@
     "start": "rescript build -w",
     "build": "rescript build -with-deps",
     "format": "rescript format -all",
-    "clean": "rescript clean"
+    "clean": "rescript clean",
+    "prepare": "rescript clean && rescript build -with-deps"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
